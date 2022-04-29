@@ -367,7 +367,7 @@ export default class {
       });
     } else {
       return new Promise(resolve => {
-        resolve(`http://34.223.251.189/163/song/media/outer/url?id=${track.id}`);
+        resolve(`http://34.223.251.189/music/song/media/outer/url?id=${track.id}`);
       });
     }
   }

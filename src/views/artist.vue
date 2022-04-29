@@ -342,7 +342,7 @@ export default {
     },
     copyUrl(id) {
       let showToast = this.showToast;
-      this.$copyText(`http://34.223.251.189/163/#/artist?id=${id}`)
+      this.$copyText(`http://34.223.251.189/music/#/artist?id=${id}`)
         .then(function () {
           showToast(locale.t('toast.copied'));
         })
@@ -351,7 +351,7 @@ export default {
         });
     },
     openInBrowser(id) {
-      const url = `http://34.223.251.189/163/#/artist?id=${id}`;
+      const url = `http://34.223.251.189/music/#/artist?id=${id}`;
       window.open(url);
     },
   },
