@@ -308,7 +308,7 @@ export default {
     },
     copyUrl(id) {
       let showToast = this.showToast;
-      this.$copyText(`https://music.163.com/#/album?id=${id}`)
+      this.$copyText(`http://34.223.251.189/163/#/album?id=${id}`)
         .then(function () {
           showToast(locale.t('toast.copied'));
         })
@@ -317,7 +317,7 @@ export default {
         });
     },
     openInBrowser(id) {
-      const url = `https://music.163.com/#/album?id=${id}`;
+      const url = `http://34.223.251.189/163/#/album?id=${id}`;
       window.open(url);
     },
   },

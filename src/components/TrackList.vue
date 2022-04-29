@@ -271,7 +271,7 @@ export default {
     },
     copyLink() {
       clipboard.writeText(
-        `https://music.163.com/song?id=${this.rightClickedTrack.id}`
+        `http://34.223.251.189/163/song?id=${this.rightClickedTrack.id}`
       );
       this.showToast(locale.t('toast.copied'));
     },
