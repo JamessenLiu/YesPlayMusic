@@ -367,7 +367,7 @@ export default class {
       });
     } else {
       return new Promise(resolve => {
-        resolve(`https://music.163.com/song/media/outer/url?id=${track.id}`);
+        resolve(`http://34.223.251.189/163/song/media/outer/url?id=${track.id}`);
       });
     }
   }

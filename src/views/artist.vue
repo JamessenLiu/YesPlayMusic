@@ -210,7 +210,7 @@ export default {
   },
   beforeRouteUpdate(to, from, next) {
     this.artist.img1v1Url =
-      'https://p1.music.126.net/VnZiScyynLG7atLIZ2YPkw==/18686200114669622.jpg';
+      'http://34.223.251.189/1261/VnZiScyynLG7atLIZ2YPkw==/18686200114669622.jpg';
     this.loadData(to.params.id, next);
   },
   data() {
@@ -218,7 +218,7 @@ export default {
       show: false,
       artist: {
         img1v1Url:
-          'https://p1.music.126.net/VnZiScyynLG7atLIZ2YPkw==/18686200114669622.jpg',
+          'http://34.223.251.189/1261/VnZiScyynLG7atLIZ2YPkw==/18686200114669622.jpg',
       },
       popularTracks: [],
       albumsData: [],
@@ -342,7 +342,7 @@ export default {
     },
     copyUrl(id) {
       let showToast = this.showToast;
-      this.$copyText(`https://music.163.com/#/artist?id=${id}`)
+      this.$copyText(`http://34.223.251.189/163/#/artist?id=${id}`)
         .then(function () {
           showToast(locale.t('toast.copied'));
         })
@@ -351,7 +351,7 @@ export default {
         });
     },
     openInBrowser(id) {
-      const url = `https://music.163.com/#/artist?id=${id}`;
+      const url = `http://34.223.251.189/163/#/artist?id=${id}`;
       window.open(url);
     },
   },
